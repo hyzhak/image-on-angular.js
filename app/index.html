@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
-    <title></title>
+    <meta charset="utf-8">
+    <title>Image on AngularJS Example</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-responsive.css"/>
 </head>
 <body>
+    <div>
+        <div class="hero-unit">
+            <h1>Image on AngularJS</h1>
+            <p>Advanced Image on AngularJS</p>
+        </div>
+        <h2>Features</h2>
+        <ul>
+            <li>Preloader</li>
+        </ul>
+        <h2>Example</h2>
+        <div class="container">
+            <img src="http://distilleryimage9.s3.amazonaws.com/b9ebba5271de11e2871d22000a1f92db_7.jpg"/>
+            <button class="btn btn-large btn-primary">Next<i class="icon-arrow-right"></i></button>
+        </div>
+        <h2>Support</h2>
+        <p>
+            <a href="http://about.me/hyzhak">Hyzhak & Burenka</a>
+        </p>
+    </div>
 
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38043860-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>

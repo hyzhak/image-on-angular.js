@@ -5,6 +5,7 @@
     <title>Image on AngularJS Example</title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/spin.css">
 </head>
 <body>
     <div ng-controller="ImagesCtrl">
@@ -18,13 +19,15 @@
         </ul>
         <h2>Example</h2>
         <div class="container">
-            <p>
+            <div>
                 <div smart-image width="302" height="302" src="{{imageUrl}}"></div>
+                <!--
                 <button class="btn btn-large btn-primary">Next<i class="icon-arrow-right"></i></button>
-            </p>
-            <p>
+                -->
+            </div>
+            <div>
                 <input ng-model="imageUrl" type="text">
-            </p>
+            </div>
         </div>
         <h2>Support</h2>
         <p>

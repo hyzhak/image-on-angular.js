@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="app">
 <head>
     <meta charset="utf-8">
     <title>Image on AngularJS Example</title>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-responsive.css"/>
 </head>
 <body>
-    <div>
+    <div ng-controller="ImagesCtrl">
         <div class="hero-unit">
             <h1>Image on AngularJS</h1>
             <p>Advanced Image on AngularJS</p>
@@ -18,19 +18,19 @@
         </ul>
         <h2>Example</h2>
         <div class="container">
-            <img src="http://distilleryimage9.s3.amazonaws.com/b9ebba5271de11e2871d22000a1f92db_7.jpg"/>
-            <button class="btn btn-large btn-primary">Next<i class="icon-arrow-right"></i></button>
+            <p>
+                <div smart-image width="302" height="302" src="{{imageUrl}}"></div>
+                <button class="btn btn-large btn-primary">Next<i class="icon-arrow-right"></i></button>
+            </p>
+            <p>
+                <input ng-model="imageUrl" type="text">
+            </p>
         </div>
         <h2>Support</h2>
         <p>
             <a href="http://about.me/hyzhak">Hyzhak & Burenka</a>
         </p>
     </div>
-
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular/angular-resource.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
 
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -43,5 +43,14 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+
+    <!--<script src="lib/angular/angular.js"></script>-->
+    <!--<script src="lib/angular/angular-resource.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
+    <script src="http://code.angularjs.org/1.0.4/angular-resource.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!--<script src="lib/jquery-1.8.1.js"></script>-->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
